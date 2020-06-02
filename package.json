@@ -1,0 +1,28 @@
+{
+  "name": "gb-ts",
+  "version": "1.0.0",
+  "description": "A discord bot for godless' server written in TypeScript",
+  "main": "./dist/bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/bot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshTRN/gb-ts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshTRN/gb-ts/issues"
+  },
+  "homepage": "https://github.com/JoshTRN/gb-ts#readme",
+  "dependencies": {
+    "@types/lodash": "^4.14.154",
+    "@types/node": "^14.0.6",
+    "ascii-table": "0.0.9",
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.15"
+  }
+}
