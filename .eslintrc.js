@@ -2,11 +2,18 @@ module.exports = {
 	env: {
 		browser: true
 	},
-	extends: 'eslint:recommended',
 	parserOptions: {
-		ecmaVersion: 7
+		ecmaVersion: 5
 	},
-	parser: 'babel-eslint',
+	parser: '@typescript-eslint/parser',
+	plugins: [
+		'typescript-eslint',
+	],
+	extends: [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
 	rules: {
 		'brace-style': ['error', '1tbs'],
 		'no-inner-declarations': ["off"],
