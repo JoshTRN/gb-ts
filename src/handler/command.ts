@@ -10,7 +10,7 @@ module.exports = (bot: Bot) => {
 
 		const commands = readdirSync(`./dist/commands/${dir}`).filter(file => file.endsWith('.js') && !file.includes('.map'))
 
-		for (let file of commands) {
+		for (const file of commands) {
 			const commandFile = require(`../commands/${dir}/${file}`)
 
 			if (commandFile.name) {
