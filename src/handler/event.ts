@@ -1,5 +1,5 @@
 import { readdirSync } from 'fs'
-import { Bot } from '../bot'
+import Bot from '../ts/interfaces/bot.interface'
 
 const ascii: any  = require('ascii-table')
 const table = new ascii().setHeading('Event', 'Load Status')
@@ -14,7 +14,7 @@ module.exports = (bot: Bot) => {
 			bot.on(name, run.bind(null, bot))
 			table.addRow(name, '✅')
 		} else {
-			table.addRow(file, '❌ => file missing??')
+			table.addRow(file, '❌ => file missing??') 
 		} 
 	})
 	console.log(table.toString())

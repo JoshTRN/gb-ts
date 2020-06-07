@@ -1,7 +1,7 @@
 import { dirname, join } from 'path'
 import { existsSync, readdirSync } from 'fs'
 import { Message } from 'discord.js';
-import { Bot } from '../../bot'
+import Bot from '../../ts/interfaces/bot.interface'
 
 module.exports = {
 	name: `play`,
@@ -20,7 +20,7 @@ module.exports = {
 			let commandOptions = ''
 
 			for (let index in fileNames) {
-				const fileNum = parseInt(index) + 1
+				const fileNum = +index + 1
 				commandOptions += `${fileNum}: ${fileNames[index]}\n`
 				bot.commandCache.set(fileNum, fileNames[index])
 			}

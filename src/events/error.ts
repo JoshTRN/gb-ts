@@ -1,4 +1,4 @@
-import { Bot } from '../bot'
+import Bot from '../ts/interfaces/bot.interface'
 
 module.exports = {
 	name: 'error',
