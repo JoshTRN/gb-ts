@@ -1,0 +1,120 @@
+{
+    "env": {
+        "browser": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "brace-style": [
+            "error",
+            "1tbs"
+        ],
+        "no-inner-declarations": [
+            "off"
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 180
+            }
+        ],
+        "indent": [
+            "error",
+            "tab",
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "no-redeclare": [
+            "error"
+        ],
+        "no-empty": [
+            "off"
+        ],
+        "no-undef": [
+            "off"
+        ],
+        "operator-linebreak": [
+            "error",
+            "before"
+        ],
+        "no-nested-ternary": [
+            "error"
+        ],
+        "curly": [
+            "error",
+            "multi",
+            "consistent"
+        ],
+        "space-before-function-paren": [
+            "error",
+            "always"
+        ],
+        "keyword-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "no-extra-parens": [
+            "off"
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                "args": "none"
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1
+            }
+        ],
+        "@typescript-eslint/no-var-requires": [
+            "off"
+        ],
+        "@typescript-eslint/no-explicit-any": [
+            "off"
+        ],
+        "@typescript-eslint/no-non-null-assertion": [
+            "off"
+        ]
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/gulp/*.js",
+                "gulpfile.js"
+            ],
+            "parserOptions": {
+                "ecmaVersion": 2019
+            },
+            "env": {
+                "node": true
+            },
+            "rules": {
+                "no-console": "off"
+            }
+        }
+    ]
+}
