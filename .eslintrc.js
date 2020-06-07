@@ -3,11 +3,11 @@ module.exports = {
 		browser: true
 	},
 	parserOptions: {
-		ecmaVersion: 5
+		ecmaVersion: 6
 	},
 	parser: '@typescript-eslint/parser',
 	plugins: [
-		'typescript-eslint',
+		'@typescript-eslint'
 	],
 	extends: [
 		"eslint:recommended",
@@ -31,7 +31,10 @@ module.exports = {
 		'no-extra-parens': ["off"],
 		'comma-dangle': ['error', 'never'],
 		'no-unused-vars': ['error', { args: 'none' }],
-		"no-multiple-empty-lines": ["error", { "max": 1 }]
+		"no-multiple-empty-lines": ["error", { "max": 1 }],
+		"@typescript-eslint/no-var-requires": ["off"],
+		"@typescript-eslint/no-explicit-any": ["off"],
+		'@typescript-eslint/no-non-null-assertion': ['off']
 	},
 	overrides: [
 		{
